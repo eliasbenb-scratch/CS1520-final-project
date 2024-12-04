@@ -1,0 +1,90 @@
+body {
+    max-width: 459px;
+    background-color: khaki;
+}
+
+#main_menu_h1 {
+    text-align: center;
+}
+
+#restaurant_logo {
+    display:block;
+    width: 90%;
+    height:200px;
+    margin:0px auto 20px auto;
+}
+
+#left_div_first_ul, #left_div_first_ul ul {
+    list-style-type: none;
+    /* Remove bullets */
+    padding: 0;
+    /* Optional: Remove default padding */
+    margin: 0;
+    /* Optional: Remove default margin */
+}
+
+#left_div_first_ul h2, #left_div_first_ul p {
+    padding:0px;
+    margin:0px;
+    text-align: center;
+}
+
+#left_div_first_ul li img {
+    width: 90%;
+}
+
+.left_div_first_inner_ul li {
+    margin: 20px 5px;
+    float:left;
+    width: 45%;
+}
+
+#left_div_second_ul, #left_div_second_ul ul {
+    list-style-type: none;
+    /* Remove bullets */
+    padding: 0;
+    /* Optional: Remove default padding */
+    margin: 40px 0px;
+    /* Optional: Remove default margin */
+}
+
+#left_div_second_ul h2, #left_div_second_ul p {
+    padding:0px;
+    margin:0px;
+    text-align: center;
+}
+
+.left_div_second_ul_li {
+    /* float:left;
+    width: 40%; */
+    margin: 10px;
+}
+
+#left_div_second_ul li img {
+    width: 90%;
+    margin: 10px;
+    display:block;
+}
+
+.left_div_second_inner_ul li {
+    margin: 5px 5px;
+    float:left;
+    width: 90%;
+}
+
+.user_selection {
+    text-align: center;
+    margin: 10px;
+}
+
+.user_selection .less, .user_selection .more {
+    background-color: lightgray;
+    padding: 3px 5px;
+    margin: 5px;
+}
+
+#right_div textarea, #submit_button {
+    display:block;
+    margin:5px;
+    font-size:14px;
+}

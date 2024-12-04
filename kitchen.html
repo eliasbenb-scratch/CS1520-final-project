@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="USE URL_FOR HERE"></script>
+    <link rel="stylesheet" media="all and (min-width:451px)" type="text/css" href="USE URL_FOR HERE">
+    <link rel="stylesheet" media="all and (max-width:450px)" type="text/css" href="USE URL_FOR HERE">
+    <title>Kitchen Orders</title>
+</head>
+
+<body>
+    <h1>Kitchen - List of current orders</h1>
+    <ul id="customer_order_ul">
+        {% for order in orders %}
+            <li class="customer_order_li">
+                <h2>Customer Name: {{order.customer_name}}</h2>
+                <h3>Table: {{order.table_number}}</h3>
+                <ul>
+                {% for current_order in order.orders.split("\n") %}
+                    <li class="items"> {{current_order}} </li>
+                {% endfor %}
+                </ul>
+                <a href="USE URL_FOR HERE">Delete Order</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>

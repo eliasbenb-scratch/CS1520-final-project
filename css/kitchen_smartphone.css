@@ -1,0 +1,36 @@
+body {
+    min-width: 300px;
+}
+
+a {
+    width:60%;
+    border: 1px solid black;
+    background-color:aquamarine;
+    margin:20px auto;
+    text-align: center;
+    display:block;
+    text-decoration: none;
+}
+
+#customer_order_ul {
+    list-style-type: none;
+}
+
+.customer_order_li {
+    list-style-type: none;
+    background-color: darkorange;
+    width:90%;
+    margin:10px;
+    padding:5px;
+}
+
+.items {
+    clear:both;
+    list-style-type: none;
+    margin:10px;
+}
+
+h3, h1, h2 {
+    text-align: center;
+    margin:10px;
+}

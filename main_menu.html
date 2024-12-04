@@ -1,0 +1,212 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="all and (min-width:451px)" type="text/css" href="USE URL_FOR HERE">
+    <link rel="stylesheet" media="all and (max-width:450px)" type="text/css" href="USE URL_FOR HERE">
+    <script type="text/javascript" src="USE URL_FOR HERE"></script>
+    <title>Restaurant Depot</title>
+</head>
+
+<body>
+    <h1 id="main_menu_h1">Main Menu</h1>
+    <img id="restaurant_logo" src="{{ url_for('static', filename='images/restaurant_logo.jpg') }}" alt="">
+    <div id="left_div">
+        <ul id="left_div_first_ul">
+            <li class="left_div_first_ul_li">
+                <h2>NIGIRIZUSHI</h2>
+                <p>Hand-pressed sushi where the topping is pressed on the sushirice</p>
+                <img src="{{ url_for('static', filename='images/sushi_images/nigirizushi/main_picture.jpg') }}" alt="">
+                <ul class="left_div_first_inner_ul">
+                    <li>
+                        <a href=""><img src="{{ url_for('static', filename='images/sushi_images/nigirizushi/akami.jpg')}}" alt=""></a>
+                        <p>Price: $10.00</p>
+                        <div class="user_selection">
+                            <label class="less" id="akami_less">-</label>
+                            <label id="akami_order">0</label>
+                            <label class="more" id="akami_more">+</label>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="{{ url_for('static', filename='images/sushi_images/nigirizushi/shiromi.jpg')}}" alt=""></a>
+                        <p>Price: $10.00</p>
+                        <div class="user_selection">
+                            <label class="less" id="shiromi_less">-</label>
+                            <label id="shiromi_order">0</label>
+                            <label class="more" id="shiromi_more">+</label>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="{{ url_for('static', filename='images/sushi_images/nigirizushi/hikarimono.jpg')}}" alt=""></a>
+                        <p>Price: $10.00</p>
+                        <div class="user_selection">
+                            <label class="less" id="hikarimono_less">-</label>
+                            <label id="hikarimono_order">0</label>
+                            <label class="more" id="hikarimono_more">+</label>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="{{ url_for('static', filename='images/sushi_images/nigirizushi/ebi.jpg')}}" alt=""></a>
+                        <p>Price: $10.00</p>
+                        <div class="user_selection">
+                            <label class="less" id="ebi_less">-</label>
+                            <label id="ebi_order">0</label>
+                            <label class="more" id="ebi_more">+</label>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="left_div_first_ul_li">
+                <h2>MAKIZUSHI</h2>
+                <p>Hand-pressed sushi where the topping is pressed on the sushirice</p>
+                <img src="{{ url_for('static', filename='images/sushi_images/makizushi/main_picture.jpg')}}" alt="">
+                <ul class="left_div_first_inner_ul">
+                    <li>
+                        <a href=""><img src="{{ url_for('static', filename='images/sushi_images/makizushi/hosomaki.jpg')}}" alt=""></a>
+                        <p>Price: $10.00</p>
+                        <div class="user_selection">
+                            <label class="less" id="hosomaki_less">-</label>
+                            <label id="hosomaki_order">0</label>
+                            <label class="more" id="hosomaki_more">+</label>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="{{ url_for('static', filename='images/sushi_images/makizushi/temaki.jpg')}}" alt=""></a>
+                        <p>Price: $10.00</p>
+                        <div class="user_selection">
+                            <label class="less" id="temaki_less">-</label>
+                            <label id="temaki_order">0</label>
+                            <label class="more" id="temaki_more">+</label>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="{{ url_for('static', filename='images/sushi_images/makizushi/oshizushi.jpg')}}" alt=""></a>
+                        <p>Price: $10.00</p>
+                        <div class="user_selection">
+                            <label class="less" id="oshizushi_less">-</label>
+                            <label id="oshizushi_order">0</label>
+                            <label class="more" id="oshizushi_more">+</label>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="{{ url_for('static', filename='images/sushi_images/makizushi/futomaki.jpg')}}" alt=""></a>
+                        <p>Price: $10.00</p>
+                        <div class="user_selection">
+                            <label class="less" id="futomaki_less">-</label>
+                            <label id="futomaki_order">0</label>
+                            <label class="more" id="futomaki_more">+</label>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="left_div_first_ul_li">
+                <h2>GUNKANMAKI</h2>
+                <p>Hand-pressed sushi where the topping is pressed on the sushirice</p>
+                <img src="{{ url_for('static', filename='images/sushi_images/gunkanmaki/main_picture.jpg')}}" alt="">
+                <ul class="left_div_first_inner_ul">
+                    <li>
+                        <a href=""><img src="{{ url_for('static', filename='images/sushi_images/gunkanmaki/ikura.jpg')}}" alt=""></a>
+                        <p>Price: $10.00</p>
+                        <div class="user_selection">
+                            <label class="less" id="ikura_less">-</label>
+                            <label id="ikura_order">0</label>
+                            <label class="more" id="ikura_more">+</label>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="{{ url_for('static', filename='images/sushi_images/gunkanmaki/tobiko.jpg')}}" alt=""></a>
+                        <p>Price: $10.00</p>
+                        <div class="user_selection">
+                            <label class="less" id="tobiko_less">-</label>
+                            <label id="tobiko_order">0</label>
+                            <label class="more" id="tobiko_more">+</label>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="{{ url_for('static', filename='images/sushi_images/gunkanmaki/kazunoko.jpg')}}" alt=""></a>
+                        <p>Price: $10.00</p>
+                        <div class="user_selection">
+                            <label class="less" id="kazunoko_less">-</label>
+                            <label id="kazunoko_order">0</label>
+                            <label class="more" id="kazunoko_more">+</label>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="{{ url_for('static', filename='images/sushi_images/gunkanmaki/uni.jpg')}}" alt=""></a>
+                        <p>Price: $10.00</p>
+                        <div class="user_selection">
+                            <label class="less" id="uni_less">-</label>
+                            <label id="uni_order">0</label>
+                            <label class="more" id="uni_more">+</label>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul id="left_div_second_ul">
+            <li class="left_div_second_ul_li">
+                <h2>CHIRASHIZUSHI</h2>
+                <p>Scattered sushi; a bowl of sushi rice plus wide group of ingredients</p>
+                <img src="{{ url_for('static', filename='images/sushi_images/chirashizushi/main_picture.jpg')}}" alt="">
+                <ul class="left_div_second_inner_ul">
+                    <li>
+                        <a href=""><img src="{{ url_for('static', filename='images/sushi_images/chirashizushi/tokyo_style.jpg')}}" alt=""></a>
+                        <p>Price: $10.00</p>
+                        <div class="user_selection">
+                            <label class="less" id="tokyo_style_less">-</label>
+                            <label id="tokyo_style_order">0</label>
+                            <label class="more" id="tokyo_style_more">+</label>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=""><img src="{{ url_for('static', filename='images/sushi_images/chirashizushi/kansai_style.jpg')}}" alt=""></a>
+                        <p>Price: $10.00</p>
+                        <div class="user_selection">
+                            <label class="less" id="kansai_style_less">-</label>
+                            <label id="kansai_style_order">0</label>
+                            <label class="more" id="kansai_style_more">+</label>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="left_div_second_ul_li">
+                <h2>OSHIZUSHI</h2>
+                <p>Rectangular shape sushi, known as pressed or box sushi style. Looks like a small brick</p>
+                <img src="{{ url_for('static', filename='images/sushi_images/oshizushi/main_picture.jpg')}}" alt="">
+                <ul class="left_div_second_inner_ul">
+                    <li class="left_div_second_ul_li">
+                        <a href=""><img src="{{ url_for('static', filename='images/sushi_images/oshizushi/iwakunizushi.jpg')}}" alt=""></a>
+                        <p>Price: $10.00</p>
+                        <div class="user_selection">
+                            <label class="less" id="iwakunizushi_less">-</label>
+                            <label id="iwakunizushi_order">0</label>
+                            <label class="more" id="iwakunizushi_more">+</label>
+                        </div>
+                    </li>
+                    <li class="left_div_second_ul_li">
+                        <a href=""><img src="{{ url_for('static', filename='images/sushi_images/oshizushi/battera.jpg')}}" alt=""></a>
+                        <p>Price: $10.00</p>
+                        <div class="user_selection">
+                            <label class="less" id="battera_less">-</label>
+                            <label id="battera_order">0</label>
+                            <label class="more" id="battera_more">+</label>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="right_div">
+        <form action="" method="">
+            <h2>Order Summary</h2>
+            <textarea id="order_summary" name="order_summary" rows=20 cols=30 id=""></textarea>
+            <label for="customer_name">Customer Name: </label>
+            <input type="text" name="customer_name">
+            <input id="submit_button" type="submit" value="Place Order">
+        </form>
+    </div>
+</body>
+
+</html>
