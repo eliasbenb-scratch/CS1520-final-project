@@ -11,10 +11,9 @@ db: SQLAlchemy = SQLAlchemy(app)
 
 
 class Order(db.Model):
-    """
-    SQLAlchemy model representing a restaurant order.
+    """SQLAlchemy model representing a restaurant order.
 
-    Attributes:
+    Args:
         id (int): Primary key for the order
         customer_name (str): Name of the customer placing the order
         table_number (int): Table number where the order was placed
@@ -27,8 +26,7 @@ class Order(db.Model):
     orders: str = db.Column(db.Text, nullable=False)
 
     def __iter__(self) -> Iterator[tuple[str, Any]]:
-        """
-        Allows conversion of the Order object to a dictionary using dict(order).
+        """Allows conversion of the Order object to a dictionary using dict(order).
 
         Yields:
             tuple[str, Any]: Key-value pairs for each attribute of the order
@@ -46,8 +44,7 @@ with app.app_context():
 
 @app.route("/<int:table_number>")
 def main_menu(table_number: int) -> str:
-    """
-    Display the main menu for a specific table.
+    """Display the main menu for a specific table.
 
     Args:
         table_number (int): The table number requesting the menu
@@ -60,8 +57,7 @@ def main_menu(table_number: int) -> str:
 
 @app.route("/order/<int:table_number>", methods=["POST"])
 def place_order(table_number: int) -> str:
-    """
-    Handle the submission of a new order for a specific table.
+    """Handle the submission of a new order for a specific table.
 
     Args:
         table_number (int): The table number placing the order
@@ -91,8 +87,7 @@ def place_order(table_number: int) -> str:
 
 @app.route("/kitchen/")
 def kitchen() -> str:
-    """
-    Display all current orders in the kitchen view.
+    """Display all current orders in the kitchen view.
 
     Returns:
         str: Rendered HTML template showing all active orders
@@ -106,8 +101,7 @@ def kitchen() -> str:
 
 @app.route("/delete/<int:id>")
 def delete_order(id: int) -> Response:
-    """
-    Delete a specific order from the system.
+    """Delete a specific order from the system.
 
     Args:
         id (int): The ID of the order to delete
