@@ -9,7 +9,8 @@
 			"extensions": [
 				"ms-python.python",
 				"charliermarsh.ruff",
-				"esbenp.prettier-vscode"
+				"esbenp.prettier-vscode",
+				"mathematic.vscode-pdf"
 			]
 		}
 	},
