@@ -1,5 +1,5 @@
 import os
-from typing import Any, Iterator, Optional
+from typing import Any, Iterator
 
 from flask import Flask, Response, redirect, render_template, request, url_for
 from flask_sqlalchemy import SQLAlchemy
@@ -65,7 +65,7 @@ def place_order(table_number: int) -> str:
     Returns:
         str: Rendered HTML template showing the order summary
     """
-    order: Order = Order(
+    order = Order(
         customer_name=request.form.get("customer_name"),
         table_number=table_number,
         orders=request.form.get("order_summary"),
@@ -92,11 +92,8 @@ def kitchen() -> str:
     Returns:
         str: Rendered HTML template showing all active orders
     """
-    orders: list[Order] = Order.query.all()
-    orders_list: list[dict[str, Optional[str | int]]] = [
-        dict(order) for order in orders
-    ]
-    return render_template("kitchen.html", orders=orders_list)
+    orders = [dict(order) for order in Order.query.all()]
+    return render_template("kitchen.html", orders=orders)
 
 
 @app.route("/delete/<int:id>")
